@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+.header-container {
+     background-color: #027373;
+     text-align: center;
+     box-shadow: -1px 1px 7px 1px rgba(0,0,0,0.57);
+}
+
+header {
+     padding: 50px;
+}
+
+
+
+header > h1 {
+     color:  rgba(255, 255, 255, 0.906);
+}
+
+nav {
+     padding-bottom: 20px;
+}
+
+nav > .link{
+     padding: 0px 10px;
+     color: rgba(255, 255, 255, 0.708);
+     font-size: 1.4em;
+     text-decoration: none;
+}
+
+nav > .link:hover{
+     color: rgb(255, 255, 255);
+     text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+     header {
+          font-size: 1.6em;
+     }
+}
+
+@media (min-width: 720px) {
+     header {
+          font-size: 3em;
+     }
+}
