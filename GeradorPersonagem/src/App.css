@@ -104,15 +104,17 @@ td {
 
 .armas {
   padding: 10px 0px;
-  text-align: left;
 }
 
 .armas > h3 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: var(--cor02);
 }
-
 .armas > ol >  li {
+  padding: 5px;
   margin-bottom: 2.5px;
+  text-align: left;
+  border: 1px black solid;
 }
 
 .author {
@@ -179,12 +181,16 @@ td {
   text-decoration: underline;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 600px) {
   .home-main {
     width: 100vw;
   }
   .container-dados {
     width: 90vw;
+  }
+
+  .dados > p {
+    height: 97px;
   }
   table {
     width: 80vw;
@@ -195,7 +201,7 @@ td {
   }
  .armas {
   padding: 0px 10vw;
- 
+  width: 90vw;
 }
 
   .container-author-infos {
@@ -212,7 +218,7 @@ td {
 }
 
 
-@media (min-width: 720px) {
+@media (min-width: 600px) {
   .home-main {
     width: 700px;
     border-radius: 1.4em;

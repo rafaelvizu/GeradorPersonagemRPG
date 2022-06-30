@@ -120,7 +120,7 @@ function Home() {
                                              <td><b>Inteligência</b></td>
                                              <td>{int}</td>
                                         </tr>
-                                        <tr>
+                                        <tr className="fim-tabela">
                                              <td><b>Educação</b></td>
                                              <td>{edu}</td>
                                         </tr>
@@ -129,7 +129,7 @@ function Home() {
                               <table>
                                    <caption>Atributos Secundários</caption>
                                    <thead>
-                                        <tr>
+                                        <tr className="fim-tabela">
                                              <th>Atributos</th>
                                              <th>Valores</th>
                                         </tr>
