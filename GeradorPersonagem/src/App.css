@@ -193,6 +193,10 @@ td {
   td {
     width: 40vw;
   }
+ .armas {
+  padding: 0px 10vw;
+ 
+}
 
   .container-author-infos {
     width: 100vw;
