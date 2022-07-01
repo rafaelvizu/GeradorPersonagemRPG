@@ -14,7 +14,7 @@ Pretendo dar continuidade nesse projeto, adicionar muito mais opções, assim, f
 
 ## Acesse o Projeto
 
-**Site:** [RplayG Tools](https://rplaygtools.netlify.app)
+**Site:** [RplayG Tools](https://rplayg-tools.netlify.app)
 </br>
 **Aplicativo:** [Download Beta](https://drive.google.com/file/d/1jrED1_ekyolVw8-l9wbcIBAwvwXZKD2E/view?usp=sharing)
 
