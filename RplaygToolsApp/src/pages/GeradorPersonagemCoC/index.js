@@ -84,6 +84,7 @@ function GeradorPersonagemCoc() {
                marginTop: 50,
                borderRadius: 20,
                alignItems: 'center',
+               padding: 20,
           },
 
           h1: {
@@ -92,6 +93,7 @@ function GeradorPersonagemCoc() {
                color: 'white',
                fontWeight: 'bold',
                marginTop: 20,
+               marginBottom: 10,
                fontSize: 24
           },
 
@@ -102,6 +104,25 @@ function GeradorPersonagemCoc() {
                color: 'white',
                fontFamily: 'monospace',
           },
+
+          pArma: {
+               fontSize: 16,
+               textAlign: 'left',
+               width: 250,
+               color: 'white',
+               fontFamily: 'monospace',
+          },
+
+          h1Arma: {
+               fontFamily: 'monospace',
+               textAlign: 'center',
+               color: 'white',
+               fontWeight: 'bold',
+               marginTop: 20,
+               marginBottom: 39,
+               fontSize: 24,   
+          },
+          
           btnGerar: {
                padding: 10,
                backgroundColor: '#B9030F',
@@ -141,11 +162,10 @@ function GeradorPersonagemCoc() {
 
                     <View style={styles.dadosContainter}>
                          <Text style={styles.h1}>Atributos Príncipais</Text>
-                         <Text style={styles.p}>
 
                               <View style={{flexDirection: 'row'}}>
                                    <View style={{marginRight: 15}}>
-                                        <Text>
+                                        <Text style={styles.p}>
                                              <Text style={{fontWeight: 'bold'}}>FOR: </Text>{forca}{'\n'}
                                              <Text style={{fontWeight: 'bold'}}>CON: </Text>{con}{'\n'}
                                              <Text style={{fontWeight: 'bold'}}>POD: </Text>{pod}{'\n'}
@@ -153,7 +173,7 @@ function GeradorPersonagemCoc() {
                                         </Text>
                                    </View>
                                    <View style={{marginLeft: 15}}>
-                                        <Text>
+                                        <Text style={styles.p}>
                                              <Text style={{fontWeight: 'bold'}}>APA: </Text>{apa}{'\n'}
                                              <Text style={{fontWeight: 'bold'}}>TAM: </Text>{tam}{'\n'}
                                              <Text style={{fontWeight: 'bold'}}>INT: </Text>{int}{'\n'}
@@ -161,31 +181,26 @@ function GeradorPersonagemCoc() {
                                         </Text>
                                    </View>
                               </View>
-
-                         </Text>
                     </View>
 
 
                     <View style={styles.dadosContainter}>
                          <Text style={styles.h1}>Atributos Secundários</Text>
-                         <Text style={styles.p}>
                               
                               <View style={{flexDirection: 'row'}}>
                                    <View style={{marginRight: 15}}>
-                                        <Text>
+                                        <Text style={styles.p}>
                                              <Text style={{fontWeight: 'bold'}}>PM: {pod}</Text>{}{'\n'}
                                              <Text style={{fontWeight: 'bold'}}>PV: </Text>{Math.floor((tam+con) / 10)}{'\n'}
                                         </Text>
                                    </View>
-                                   <View style={{marginLeft: 15}}>
-                                        <Text>
+                                   <View>
+                                        <Text style={styles.p}>
                                              <Text style={{fontWeight: 'bold'}}>SOR: </Text>{pod>1?jogarDados(3, 6) * 5:0}{'\n'}
                                              <Text style={{fontWeight: 'bold'}}>SAN: </Text>{pod}{'\n'}
                                         </Text>
                                    </View>
                               </View>
-                              
-                         </Text>
 
                          <Text style={styles.p}>
                               <Text style={{fontWeight: 'bold', width: 150}}>DB: </Text>{db}{'\n'}
@@ -194,16 +209,16 @@ function GeradorPersonagemCoc() {
 
 
                     <View style={styles.dadosContainter}>
-                         <Text style={styles.h1}>Armas</Text>
+                         <Text style={styles.h1Arma}>Armas</Text>
 
 
-                              <Text style={styles.p}>
+                              <Text style={styles.pArma}>
                                    <Text style={{fontWeight: 'bold'}}>ARMA 1: </Text>{pod>1?'Ataque Desarmados (humano): 1d3 + DB':'Nenhuma'}{'\n'}
                               </Text>
-                              <Text style={styles.p}>
+                              <Text style={styles.pArma}>
                                    <Text style={{fontWeight: 'bold'}}>ARMA 2: </Text>{pod>0?armas[Math.floor(Math.random() * armas.length)]:'Nenhuma'}{'\n'}
                               </Text>
-                              <Text style={styles.p}>
+                              <Text style={styles.pArma}>
                                    <Text style={{fontWeight: 'bold'}}>ARMA 3: </Text>{pod>0?armas[Math.floor(Math.random() * armas.length)]:'Nenhuma'}{'\n'}
                               </Text>
 
