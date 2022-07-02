@@ -6,7 +6,7 @@ import Author from './src/components/Author';
 function App() {
 
   return (
-    <ScrollView>
+    <ScrollView style={{height: '100%'}}>
       <Header page='Home'/>
       <Home/>
       <Author/>

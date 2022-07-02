@@ -23,7 +23,7 @@ function Home() {
 
      const [ocupacao] = useState(['antiquário', 'autor', 'diletante', 'médico', 'jornalista', 'delegado', 'detetive', 'professor', 'arqueólogo', 'ocultista', 'policial', 'advogado', 'marinheiro', 'militar', 'enfermeiro', 'mensageiro', 'radialistav', 'telegrafista'])
 
-     const { success } = useFaker()
+     const { success, loading } = useFaker()
 
      function jogarDados(qntDados, nulLados) {
           let valor = 0
@@ -120,14 +120,11 @@ function Home() {
 
           atributosSecundarioConainer: {
                marginBottom: 10,
-          }
-
-
+          },
 
 
      })
-
-
+     
      return (
           <View style={styles.container}>
 
@@ -142,11 +139,11 @@ function Home() {
                </View>
 
                <Button
-                    title="Gerar Personagem"
+                    title={loading?'Gerar Personagem':'Carregando...'}
                     color="#027373"
                     accessibilityLabel="Clique para gerar uma ficha aleatória de Call of Cthulhu"
                     style={styles.btnGerarPersonagem}
-                    onPress={() => criarPersonagem()}
+                    onPress={() => loading?criarPersonagem():''}
                />
 
                <View style={styles.atributosPrincipal}>
@@ -196,6 +193,10 @@ function Home() {
 
           </View>
      )
+
+
+
+     
 
      
 }
