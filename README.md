@@ -16,7 +16,7 @@ Pretendo dar continuidade nesse projeto, adicionar muito mais opções, assim, f
 
 **Site:** [RplayG Tools](https://rplayg-tools.netlify.app)
 </br>
-**Aplicativo:** [Download Beta](https://drive.google.com/file/d/1jrED1_ekyolVw8-l9wbcIBAwvwXZKD2E/view?usp=sharing)
+**Aplicativo:** [Download Beta](https://drive.google.com/drive/folders/1LAsFC9y92oFnph1_3rvbEdzZ5t-Pwa1K?usp=sharing)
 
 > Lembrando que o aplicativo está em fase de teste, portanto erros são comuns de ocorrer;
 ---
