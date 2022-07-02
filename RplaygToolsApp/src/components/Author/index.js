@@ -6,6 +6,7 @@ function Author() {
           container: {
                padding: 10,
                backgroundColor: '#0D0D0D',
+               width: '100%'
           },
   
           link: {
