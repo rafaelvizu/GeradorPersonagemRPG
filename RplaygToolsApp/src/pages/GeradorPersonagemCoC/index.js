@@ -79,12 +79,13 @@ function GeradorPersonagemCoc() {
      const styles = StyleSheet.create({
           dadosContainter: {
                width: 342,
-               paddingBottom: 20,
+               paddingBottom: 30,
                backgroundColor: '#70160E',
                marginTop: 50,
                borderRadius: 20,
                alignItems: 'center',
                padding: 20,
+               marginBottom: 30,
           },
 
           h1: {
@@ -147,7 +148,7 @@ function GeradorPersonagemCoc() {
     } else {
      return (
           <View style={{alignItems: 'center', backgroundColor: '#161917', height: '100%'}}>
-               <ScrollView style={{paddingBottom: 50}}>
+               <ScrollView>
                     <View style={styles.dadosContainter}>
                          <Text style={styles.h1}>DADOS PESSOAIS</Text>
                          <Text style={styles.p}>

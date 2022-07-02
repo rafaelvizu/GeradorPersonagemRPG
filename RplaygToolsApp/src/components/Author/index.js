@@ -18,7 +18,7 @@ function Author() {
 
      return (
           <View style={styles.container}>
-               <Text style={{textAlign: 'center', color: 'white'}}>
+               <Text style={{textAlign: 'center', color: 'white', fontStyle: 'italic'}}>
                     <Text>Criador: </Text>
                     <Text onPress={() => Linking.openURL('https://rafaelvizu.github.io/Portfolio-RafaelVizu/')}
                     style={styles.link}>
