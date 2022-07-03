@@ -27,12 +27,14 @@ function Home({navigation}) {
                textDecorationLine: 'underline',
                color: 'white',
                marginBottom: 2,
+               textTransform: 'uppercase'
           },
 
           h2: {
                fontSize: 16,
                color: '#E6E6E6',
                fontFamily: 'monospace',
+               textTransform: 'capitalize'
 
           }
      })

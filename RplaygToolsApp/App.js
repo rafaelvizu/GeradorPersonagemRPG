@@ -1,5 +1,5 @@
 
-import { NavigationContainer } from '@react-navigation/native'
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './src/pages/Home'
@@ -14,8 +14,11 @@ function App() {
       const headerStyle = { 
           title: 'RPLAYG',
           headerStyle: {
-            height: 120,
+            height: 130,
             backgroundColor: '#9E0004',
+            borderBottomEndRadius: 15,
+            borderBottomStartRadius: 15,
+
           },
           headerTitleStyle: {
             color: 'white',
@@ -25,8 +28,16 @@ function App() {
           }
       }
 
+      const MyTheme = {
+        ...DefaultTheme,
+        colors: {
+          ...DefaultTheme.colors,
+          background: '#161917'
+        },
+      };
+
     return (
-      <NavigationContainer >
+      <NavigationContainer theme={MyTheme}>
 
         <Stack.Navigator initialRouteName='Home'>
 

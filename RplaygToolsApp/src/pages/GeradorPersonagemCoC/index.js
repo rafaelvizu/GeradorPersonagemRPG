@@ -79,13 +79,13 @@ function GeradorPersonagemCoc() {
      const styles = StyleSheet.create({
           dadosContainter: {
                width: 342,
-               paddingBottom: 30,
+               paddingBottom: 20,
                backgroundColor: '#70160E',
-               marginTop: 50,
+               marginTop: 25,
                borderRadius: 20,
                alignItems: 'center',
                padding: 20,
-               marginBottom: 30,
+               marginBottom: 15,
           },
 
           h1: {
@@ -129,7 +129,7 @@ function GeradorPersonagemCoc() {
                backgroundColor: '#B9030F',
                width: 187,
                marginTop: 50,
-               borderRadius: 20
+               borderRadius: 20,
           },
           pBtn: {
                textAlign: 'center',
@@ -150,7 +150,7 @@ function GeradorPersonagemCoc() {
           <View style={{alignItems: 'center', backgroundColor: '#161917', height: '100%'}}>
                <ScrollView>
                     <View style={styles.dadosContainter}>
-                         <Text style={styles.h1}>DADOS PESSOAIS</Text>
+                         <Text style={styles.h1}>Dados Pessoais</Text>
                          <Text style={styles.p}>
                               <Text style={{fontWeight: 'bold'}}>Nome: </Text>{nome} {'\n'}
                               <Text style={{fontWeight: 'bold'}}>Ocupação: </Text> {pod>1?ocupacao[Math.floor(Math.random() * success.length)]:'Nenhuma'} {'\n'}
